@@ -137,7 +137,7 @@ func (c *CloudWatch) Connect() error {
 			Endpoint: aws.String(c.EndpointOverride),
 		})
 
-	svc.Handlers.Build.PushBackNamed(handlers.NewRequestCompressionHandler([]string{opPutLogEvents, opPutMetricData}))
+	// svc.Handlers.Build.PushBackNamed(handlers.NewRequestCompressionHandler([]string{opPutLogEvents, opPutMetricData}))
 	svc.Handlers.Build.PushBackNamed(handlers.NewCustomHeaderHandler("User-Agent", agentinfo.UserAgent()))
 
 	//Format unique roll up list
