@@ -4,6 +4,15 @@ go 1.13
 
 replace github.com/influxdata/telegraf => github.com/aws/telegraf v0.10.2-0.20200902215110-5ec6811a19d9
 
+
+replace (
+        github.com/Rican7/retry v0.1.1-0.20160712041035-272ad122d6e5 => github.com/Rican7/retry v0.0.0-20160712041035-272ad122d6e5
+        github.com/fogleman/gg v1.2.1-0.20190220221249-0403632d5b90 => github.com/fogleman/gg v0.0.0-20190220221249-0403632d5b90
+        github.com/glinton/ping v0.1.4-0.20200311211934-5ac87da8cd96 => github.com/glinton/ping v0.0.0-20200311211934-5ac87da8cd96
+        github.com/satori/go.uuid v1.2.1-0.20181028125025-b2ce2384e17b => github.com/satori/go.uuid v0.0.0-20181028125025-b2ce2384e17b
+)
+
+
 require (
 	github.com/BurntSushi/toml v0.3.1
 	github.com/Jeffail/gabs v1.4.0
